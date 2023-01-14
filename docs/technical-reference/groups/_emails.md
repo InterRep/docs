@@ -35,7 +35,7 @@ There are some caveats to this:
 
 ### 2. Academic groups
 
-You could have a group that only allows people with a .edu address to gain access to it. This could form the basis of an anonymous system of wallets that are controlled by people affiliated with academic institutions. This could then be used as a gateway for certain kinds of on-chain peer reveiw or grant mechanisms that other groups are currently working on.
+You could have a group that only allows people with a .edu address to gain access to it. This could form the basis of an anonymous system of wallets that are controlled by people affiliated with academic institutions. This could then be used as a gateway for certain kinds of on-chain peer review or grant mechanisms that other groups are currently working on.
 
 ### 3. Gated groups
 
