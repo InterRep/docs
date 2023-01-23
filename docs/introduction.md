@@ -12,7 +12,7 @@ This documentation refers to the latest version of Interep, which is still at an
 
 ## Overview
 
-One of the biggest problems in online communities is the ease with which fake accounts can be created, which, in turn, reduces the quality of information and interactions on the network. The possibilty to create numerous fake identities at a low cost makes the reputation system vulnerable to sybil-attacks.
+One of the biggest problems in online communities is the ease with which fake accounts can be created, which, in turn, reduces the quality of information and interactions on the network. The possibility to create numerous fake identities at a low cost makes the reputation system vulnerable to sybil-attacks.
 
 Reputation is key to building trust in a system and it can often be used as a guarantee of authenticity. Nevertheless it is difficult to obtain and share a user's reputation without exposing their data. Many platforms today use public attestations to avoid sybil attacks, thereby forcing users to give out their personal information in order to certify their identities. This makes this kind of mechanism inefficient and unsuitable to protect users' data.
 

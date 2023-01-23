@@ -298,7 +298,7 @@ curl https://kovan.interep.link/api/v1/batches/353959683390555732847967624549905
 
 The Graph is an indexing protocol for querying networks like Ethereum and IPFS. Anyone can build and publish open APIs, called subgraphs, making data easily accessible. You can use various GraphQL [client libraries](https://thegraph.com/docs/developer/querying-from-your-app) to query the subgraph and populate your app with the data indexed by the subgraph.
 
-Our [Interep subgraph](https://thegraph.com/hosted-service/subgraph/interep-project/interep-groups-kovan) allow you to get data from the [Interep smart contract](https://github.com/interep-group/contracts).
+Our [Interep subgraph](https://thegraph.com/hosted-service/subgraph/interep-project/interep-groups-kovan) allows you to get data from the [Interep smart contract](https://github.com/interep-group/contracts).
 
 :::tip
 If you don't know GraphQL, you can try running some queries using the Graph Explorer and its [GraphQL playground](https://thegraph.com/hosted-service/subgraph/interep-project/interep-groups-kovan?selected=playground) (Kovan). You can find some examples [here](https://thegraph.com/docs/developer/graphql-api).

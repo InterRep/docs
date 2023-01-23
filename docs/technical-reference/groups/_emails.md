@@ -35,11 +35,11 @@ There are some caveats to this:
 
 ### 2. Academic groups
 
-You could have a group that only allows people with a .edu address to gain access to it. This could form the basis of an anonymous system of wallets that are controlled by people affiliated with academic institutions. This could then be used as a gateway for certain kinds of on-chain peer reveiw or grant mechanisms that other groups are currently working on.
+You could have a group that only allows people with a .edu address to gain access to it. This could form the basis of an anonymous system of wallets that are controlled by people affiliated with academic institutions. This could then be used as a gateway for certain kinds of on-chain peer review or grant mechanisms that other groups are currently working on.
 
 ### 3. Gated groups
 
-While we do not currently support any groups like this, it would be feasible for us to included a pre-set group of email addresses that want to be able to engage in some anonymous activity together, be it voting or otherwise. This flow would then allow all individuals to join an Interep group easily, which is currently not something that users can arbitrarily construct with ease.
+While we do not currently support any groups like this, it would be feasible for us to include a pre-set group of email addresses that want to be able to engage in some anonymous activity together, be it voting or otherwise. This flow would then allow all individuals to join an Interep group easily, which is currently not something that users can arbitrarily construct with ease.
 
 ## Available groups
 
