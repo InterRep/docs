@@ -2,73 +2,14 @@
 
 ## Parameters
 
--   **Followers**: number of the user's followers;
--   **Botometer overall score**: score obtained with [Botometer](https://botometer.osome.iu.edu/);
--   **Verified profile**: true if the user has a verifier profile, false otherwise.
+-   **Followers**: number of followers of the user;
+-   **Botometer overall score**: "Complete Automation Probability" score (`cap`) calculated by [Botometer](https://botometer.iuni.iu.edu/#!/) (a tool for measuring the probability that a Twitter account is run by a bot).
+-   **Verified profile**: whether the user has a verified profile.
 
 ## Levels
-
-### Gold
-
-```typescript
-[
-    {
-        parameter: "verifiedProfile",
-        value: true
-    },
-    {
-        parameter: "followers",
-        value: {
-            min: 7000
-        }
-    },
-    {
-        parameter: "botometerOverallScore",
-        value: {
-            max: 1
-        }
-    }
-]
-```
-
-### Silver
-
-```typescript
-[
-    {
-        parameter: "followers",
-        value: {
-            min: 2000
-        }
-    },
-    {
-        parameter: "botometerOverallScore",
-        value: {
-            max: 1.5
-        }
-    }
-]
-```
-
-### Bronze
-
-```typescript
-[
-    {
-        parameter: "followers",
-        value: {
-            min: 500
-        }
-    },
-    {
-        parameter: "botometerOverallScore",
-        value: {
-            max: 2
-        }
-    }
-]
-```
-
----
-
-#### Configuration file: [src/criteria/twitter.ts](https://github.com/interep-project/interep.js/blob/main/packages/reputation/src/criteria/twitter.ts)
+|                         followers                         |    < 100    |     < 1k      |    < 10k    |  < 100k  |  +100k   |
+|:---------------------------------------------------------:|:-----------:|:-------------:|:-----------:|:--------:|:--------:|
+|          is likely bot (botometer `cap` >= 0.95)          |  commoner   |   commoner    |  commoner   | commoner | commoner |
+| is likely not bot (botometer `cap` < 0.95) & not verified |  commoner   | up-and-coming | established |   star   |   icon   |
+| is likely not bot (botometer `cap` < 0.95) & not verified |  commoner   | up-and-coming | established |   star   |   icon   |
+|   is likely not bot (botometer `cap` < 0.95) & verified   | established |  established  | established |   star   |   icon   |

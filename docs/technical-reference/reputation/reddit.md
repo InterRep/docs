@@ -2,86 +2,12 @@
 
 ## Parameters
 
--   **Premium subscription**: true if the user has subscribed to a premium plan, false otherwise;
--   **Karma**: amount of user's karma;
--   **Coins**: amount of user's coins;
--   **Linked identities**: number of identities linked to the account (e.g. Twitter, Google).
+-   **Total karma**: total [karma](https://reddit.zendesk.com/hc/en-us/articles/204511829-What-is-karma-) earned by the user across all subreddits.
+-   **Is gold**: whether the user has a [gold award](https://en.reddit.com/coins).
 
 ## Levels
 
-### Gold
-
-```typescript
-[
-    {
-        parameter: "premiumSubscription",
-        value: true
-    },
-    {
-        parameter: "karma",
-        value: {
-            min: 10000
-        }
-    },
-    {
-        parameter: "coins",
-        value: {
-            min: 5000
-        }
-    },
-    {
-        parameter: "linkedIdentities",
-        value: {
-            min: 3
-        }
-    }
-]
-```
-
-### Silver
-
-```typescript
-[
-    {
-        parameter: "karma",
-        value: {
-            min: 5000
-        }
-    },
-    {
-        parameter: "coins",
-        value: {
-            min: 2000
-        }
-    },
-    {
-        parameter: "linkedIdentities",
-        value: {
-            min: 2
-        }
-    }
-]
-```
-
-### Bronze
-
-```typescript
-[
-    {
-        parameter: "karma",
-        value: {
-            min: 1000
-        }
-    },
-    {
-        parameter: "coins",
-        value: {
-            min: 500
-        }
-    }
-]
-```
-
----
-
-#### Configuration file: [src/criteria/reddit.ts](https://github.com/interep-project/interep.js/blob/main/packages/reputation/src/criteria/reddit.ts)
+|total karma|     < 2k      |< 20k|< 100k|< 200k| +200k |
+|:-----------------:|:-------------:|:---:|:----:|:----:|:-----:|
+|is gold| up-and-coming |up-and-coming|established|star| icon  |
+|is not gold|   commoner    |up-and-coming|established|star| icon  |
