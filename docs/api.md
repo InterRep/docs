@@ -11,6 +11,8 @@ If you want to use the reputation service APIs with a JavaScript library you can
 :::
 
 :::info
+
+[//]: # (TODO update?)
 Interep APIs are currently available for the following Ethereum networks: `kovan`, `goerli`.
 :::
 
