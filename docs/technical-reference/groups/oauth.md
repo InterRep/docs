@@ -35,7 +35,7 @@ Allocating funds towards public goods efficiently, safely, and fairly is a compl
 
 ## Available groups
 
-Currently there are three OAuth providers: Twitter, Github and Reddit. For each of them there will be one of the following groups based on the user's reputation level: **`gold`**, **`silver`**, **`bronze`**.
+Currently, there are three OAuth providers: Twitter, GitHub and Reddit. For each of them there will be one of the following groups based on the user's reputation level: **`commoner`**, **`up-and-coming`**, **`established`**, **`star`** and **`icon`**.
 
 :::info
 If you want to know how Interep calculates reputation click [here](/technical-reference/reputation/intro).

@@ -2,73 +2,13 @@
 
 ## Parameters
 
--   **Followers**: number of the user's followers;
--   **Received stars**: sum of the number of stars received in the user's repositories;
--   **Plan**: true if the user has subscribed to a pro plan, false otherwise.
+-   **Received stars**: sum of stars received across all user's public repositories.
+-   **Sponsors count**: number of other organizations/users sponsoring the user.
+-   **Sponsoring count**: number of other organizations/users the user is sponsoring.
 
 ## Levels
 
-### Gold
-
-```typescript
-[
-    {
-        parameter: "followers",
-        value: {
-            min: 500
-        }
-    },
-    {
-        parameter: "receivedStars",
-        value: {
-            min: 200
-        }
-    }
-]
-```
-
-### Silver
-
-```typescript
-[
-    {
-        parameter: "followers",
-        value: {
-            min: 100
-        }
-    },
-    {
-        parameter: "receivedStars",
-        value: {
-            min: 80
-        }
-    }
-]
-```
-
-### Bronze
-
-```typescript
-[
-    {
-        parameter: "proPlan",
-        value: true
-    },
-    {
-        parameter: "followers",
-        value: {
-            min: 50
-        }
-    },
-    {
-        parameter: "receivedStars",
-        value: {
-            min: 40
-        }
-    }
-]
-```
-
----
-
-#### Configuration file: [src/criteria/github.ts](https://github.com/interep-project/interep.js/blob/main/packages/reputation/src/criteria/github.ts)
+|               stars                |       0       |     < 10      |     < 100     |  < 1000  | +1000 |
+|:----------------------------------:|:-------------:|:-------------:|:-------------:|:--------:|:-----:|
+|  neither sponsored nor sponsoring  |   commoner    | up-and-coming |  established  |   star   | icon  |
+|       sponsors or sponsoring       |  established  |  established  |  established  |   star   | icon  |
