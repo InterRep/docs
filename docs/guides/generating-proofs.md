@@ -51,7 +51,7 @@ Creating Semaphore proofs also requires some zero-knowledge static files. In the
 import createProof from "@interep/proof"
 
 const groupProvider = "github"
-const groupName = "gold"
+const groupName = "established"
 const externalNullifier = 1
 const signal = "Hello World"
 

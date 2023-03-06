@@ -28,15 +28,11 @@ Once you have generated a valid OAuth token and you are able to obtain the user'
 import { calculateReputation, OAuthProvider } from "@interep/reputation"
 
 // 'getGithubUserByToken' is an example function.
-const { id, plan, followers, receivedStars } = await getGithubUserByToken(token)
+const { receivedStars, sponsorsCount, sponsoringCount } = await getGithubUserByToken(token)
 
-const reputation = calculateReputation(OAuthProvider.GITHUB, {
-    proPlan: plan.name === "pro",
-    followers,
-    receivedStars
-})
+const reputation = calculateReputation(OAuthProvider.GITHUB, { receivedStars, sponsorsCount, sponsoringCount })
 
-console.log(reputation) // gold
+console.log(reputation) // established
 ```
 
 ## Semaphore identity
