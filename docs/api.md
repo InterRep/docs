@@ -63,7 +63,7 @@ curl https://kovan.interep.link/api/v1/groups
     "data": [
         {
             "provider": "twitter",
-            "name": "gold",
+            "name": "star",
             "depth": 20,
             "root": "19217088683336594659449020493828377907203207941212636669271704950158751593251",
             "onchainRoot": "19217088683336594659449020493828377907203207941212636669271704950158751593251",
@@ -107,14 +107,14 @@ curl https://kovan.interep.link/api/v1/groups
 **GET** - Returns a specific Interep group.
 
 ```bash title="Shell"
-curl https://kovan.interep.link/api/v1/groups/github/gold
+curl https://kovan.interep.link/api/v1/groups/github/established
 ```
 
 ```json title="Response"
 {
     "data": {
         "provider": "github",
-        "name": "gold",
+        "name": "established",
         "depth": 20,
         "root": "3539596833905557328479676245499052267688962849195984401151716846778908697643",
         "onchainRoot": "3539596833905557328479676245499052267688962849195984401151716846778908697643",
@@ -129,7 +129,7 @@ curl https://kovan.interep.link/api/v1/groups/github/gold
 **GET** - Returns the group members.
 
 ```bash title="Shell"
-curl https://kovan.interep.link/api/v1/groups/github/gold/members?limit=0&offset=0
+curl https://kovan.interep.link/api/v1/groups/github/established/members?limit=0&offset=0
 ```
 
 ```json title="Response"
@@ -146,7 +146,7 @@ curl https://kovan.interep.link/api/v1/groups/github/gold/members?limit=0&offset
 **GET** - Returns true if an identity commitment belongs to a group.
 
 ```bash title="Shell"
-curl https://kovan.interep.link/api/v1/groups/github/gold/5389624958916554855745402699919973897274778066321592214684792070525465486554
+curl https://kovan.interep.link/api/v1/groups/github/established/5389624958916554855745402699919973897274778066321592214684792070525465486554
 ```
 
 ```json title="Response"
@@ -157,7 +157,7 @@ curl https://kovan.interep.link/api/v1/groups/github/gold/5389624958916554855745
 
 ```bash title="Shell"
 curl -X POST -H "Authorization: token OAUTH-TOKEN" \
-https://kovan.interep.link/api/v1/groups/github/gold/5389624958916554855745402699919973897274778066321592214684792070525465486554
+https://kovan.interep.link/api/v1/groups/github/established/5389624958916554855745402699919973897274778066321592214684792070525465486554
 ```
 
 ```json title="Response"
@@ -169,7 +169,7 @@ https://kovan.interep.link/api/v1/groups/github/gold/538962495891655485574540269
 **GET** - Returns a Merkle tree proof.
 
 ```bash title="Shell"
-curl https://kovan.interep.link/api/v1/groups/github/gold/6014393454173820032764441533619576647480292883965697181546606218195926726207/proof
+curl https://kovan.interep.link/api/v1/groups/github/established/6014393454173820032764441533619576647480292883965697181546606218195926726207/proof
 ```
 
 ```json title="Response"
@@ -248,7 +248,7 @@ curl https://kovan.interep.link/api/v1/batches
 {
     "data": [
         {
-            "group": { "provider": "github", "name": "gold" },
+            "group": { "provider": "github", "name": "established" },
             "roots": ["14273848199791178467311820318933280591305571798471599149384455313172966875782"],
             "transaction": {
                 "hash": "0x1dec16b1c76a0a1fc9b4c7c898ae0ba72f496868fb7d2fe447fefe5eeaf676c1",
@@ -256,7 +256,7 @@ curl https://kovan.interep.link/api/v1/batches
             }
         },
         {
-            "group": { "provider": "github", "name": "gold" },
+            "group": { "provider": "github", "name": "established" },
             "roots": [
                 "19217088683336594659449020493828377907203207941212636669271704950158751593251",
                 "3539596833905557328479676245499052267688962849195984401151716846778908697643"
@@ -281,7 +281,7 @@ curl https://kovan.interep.link/api/v1/batches/353959683390555732847967624549905
 ```json title="Response"
 {
     "data": {
-        "group": { "provider": "github", "name": "gold" },
+        "group": { "provider": "github", "name": "established" },
         "roots": [
             "19217088683336594659449020493828377907203207941212636669271704950158751593251",
             "3539596833905557328479676245499052267688962849195984401151716846778908697643"
@@ -324,6 +324,6 @@ If you don't know GraphQL, you can try running some queries using the Graph Expl
 
 -   `id`: unique identifier among all group entities,
 -   `provider`: Interep group provider (e.g. `twitter`),
--   `name`: Interep group name (e.g. `gold`),
+-   `name`: Interep group name (e.g. `established`),
 -   `depth`: Merkle tree depth,
 -   `root`: Merkle tree root hash.
